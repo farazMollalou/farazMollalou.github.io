@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <i id="menu-btn" class="fa fa-bars"></i>
+        <nav id="nav">
+            <a href="#about">درباره من</a>
+            <a href="#portfolio">نمونه کارها</a>
+            <a href="#skills">مهارت ها</a>
+            <a href="#customers">مشتریان</a>
+        </nav>
+        <a href="#" id="logo"><img src="./img/logo.png" alt="logo"></a>
+    </header>
+
+    <main>
+        <section class="landing">
+            <div class="box">
+                <h2>سلام!</h2>
+                <p>من فراز ملالو هستم</p>
+                <p class="auto"></p>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <article>
+                <h3 class="title">دربارۀ من</h3>
+                <p class="text">
+                    طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارائه اولیه شکل ظاهری و کلی
+                    طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن
+                    باشد. معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند تا
+                    صرفا به مشتری یا صاحب کار خود نشان دهند که صفحه طراحی یا صفحه بندی شده بعد از اینکه متن در آن قرار
+                    گیرد چگونه به نظر می‌رسد و قلم‌ها و اندازه‌بندی‌ها چگونه در نظر گرفته شده‌است.
+                </p>
+                <a href="">دانلود رزومه</a>
+            </article>
+        </section>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#0000cc" fill-opacity="1"
+                d="M0,256L16,256C32,256,64,256,96,250.7C128,245,160,235,192,224C224,213,256,203,288,181.3C320,160,352,128,384,117.3C416,107,448,117,480,122.7C512,128,544,128,576,122.7C608,117,640,107,672,117.3C704,128,736,160,768,192C800,224,832,256,864,240C896,224,928,160,960,165.3C992,171,1024,245,1056,272C1088,299,1120,277,1152,256C1184,235,1216,213,1248,186.7C1280,160,1312,128,1344,122.7C1376,117,1408,139,1424,149.3L1440,160L1440,320L1424,320C1408,320,1376,320,1344,320C1312,320,1280,320,1248,320C1216,320,1184,320,1152,320C1120,320,1088,320,1056,320C1024,320,992,320,960,320C928,320,896,320,864,320C832,320,800,320,768,320C736,320,704,320,672,320C640,320,608,320,576,320C544,320,512,320,480,320C448,320,416,320,384,320C352,320,320,320,288,320C256,320,224,320,192,320C160,320,128,320,96,320C64,320,32,320,16,320L0,320Z">
+            </path>
+        </svg>
+
+        <section id="portfolio" class="portfolio">
+            <h2>نمونه کارها</h2>
+            <div class="container">
+                <div id="project_detail">
+                    <div class="btns">
+                        <button data-id="0">
+                            وبسایت آموزشگاه زبان
+                        </button>
+                        <button data-id="1">
+                            اپلیکیشن ToDo پیشرفته
+                        </button>
+                        <button data-id="2" class="active">
+                            آژانس مسافرتی
+                        </button>
+                    </div>
+                    <div class="text hide">
+                        <h3>آژانس مسافرتی پرواز</h3>
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                            است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                            تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی
+                            در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد.
+                        </p>
+                        <h4>تکنولوژی</h4>
+                        <p class="tech">HTML, CSS, Sass, JS, React Js</p>
+                        <h5>طراحی در سال <span class="year">1395</span></h5>
+                        <button class="project_link_btn">مشاهده پروژه</button>
+                    </div>
+                </div>
+                <div class="img">
+                    <img class="pro_img" src="./img/nature.jpg" alt="nature">
+                </div>
+            </div>
+        </section>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#0000cc" fill-opacity="1"
+                d="M0,64L26.7,64C53.3,64,107,64,160,69.3C213.3,75,267,85,320,101.3C373.3,117,427,139,480,122.7C533.3,107,587,53,640,53.3C693.3,53,747,107,800,144C853.3,181,907,203,960,202.7C1013.3,203,1067,181,1120,160C1173.3,139,1227,117,1280,106.7C1333.3,96,1387,96,1413,96L1440,96L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z">
+            </path>
+        </svg>
+
+        <section class="skills" id="skills">
+            <h3 class="title">
+                مهارت های من
+            </h3>
+            <div class="box">
+                <div class="item">
+                    <div class="det-1">
+                        HTML
+                    </div>
+                    <div class="line">
+                        <div class="p-bar p-bar1"><span> 90% </span></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="det-2">
+                        CSS
+                    </div>
+                    <div class="line">
+                        <div class="p-bar p-bar2"><span> 80% </span></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="det-3">
+                        JavaScript
+                    </div>
+                    <div class="line">
+                        <div class="p-bar p-bar3"><span>70%</span></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="det-4">
+                        Sass
+                    </div>
+                    <div class="line">
+                        <div class="p-bar p-bar4"><span>90%</span></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="det-5">
+                        BootStrap
+                    </div>
+                    <div class="line">
+                        <div class="p-bar p-bar5"><span>70%</span></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="det-6">
+                        React
+                    </div>
+                    <div class="line">
+                        <div class="p-bar p-bar6"><span>80%</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#0000cc" fill-opacity="1"
+                d="M0,32L40,37.3C80,43,160,53,240,85.3C320,117,400,171,480,170.7C560,171,640,117,720,106.7C800,96,880,128,960,170.7C1040,213,1120,267,1200,277.3C1280,288,1360,256,1400,240L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+            </path>
+        </svg>
+
+        <section id="customers" class="customers">
+            <h2>نظرات مشتریان</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/customers/cr7.jpg" alt="cr7">
+                        <h4>کریستیانو رونالدو</h4>
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                            است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/customers/kaka.jpg" alt="kaka">
+                        <h4>کاکا</h4>
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                            است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/customers/haal.jpg" alt="haaland">
+                        <h4>مشتری دوم</h4>
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                            است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/customers/lewa.jpg" alt="lewa">
+                        <h4>لواندوفسکی</h4>
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                            است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/customers/mbappe.jpg" alt="mbappe">
+                        <h4>کیلیان امباپه</h4>
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                            است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/customers/neymar.jpg" alt="neymar">
+                        <h4>نیمار</h4>
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                            است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/customers/ramos.jpg" alt="ramos">
+                        <h4>سرخیو راموس</h4>
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                            است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/customers/neuer.jpg" alt="neuer">
+                        <h4>مانوئل نویر</h4>
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                            است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/customers/kroos.jpg" alt="kroos">
+                        <h4>تونی کروس</h4>
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                            است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#0000cc" fill-opacity="1"
+                d="M0,128L48,144C96,160,192,192,288,181.3C384,171,480,117,576,128C672,139,768,213,864,208C960,203,1056,117,1152,106.7C1248,96,1344,160,1392,192L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+            </path>
+        </svg>
+
+    </main>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#f0e68c" fill-opacity="1"
+            d="M0,256L48,229.3C96,203,192,149,288,117.3C384,85,480,75,576,96C672,117,768,171,864,186.7C960,203,1056,181,1152,160C1248,139,1344,117,1392,106.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+    </svg>
+
+    <footer class="footer">
+        <div class="items">
+            <!-- <a href="#">
+                <img src="./img/github.png" alt="github">
+            </a>
+            <a href="#">
+                <img src="./img/instagram.png" alt="Instagram">
+            </a>
+            <a href="#">
+                <img src="./img/Linkedin.png" alt="linkedin">
+            </a> -->
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-whatsapp"></i>
+            <i class="fab fa-github"></i>
+        </div>
+        <div class="cr">
+            <p>طراحی توسط طراح سایت - 1401 | <i class="far fa-copyright"></i> | تمامی
+                حقوق محفوظ است.
+            </p>
+        </div>
+    </footer>
+</body>
+<script src="./js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+    let Width = window.innerWidth
+    let slide_count
+    if (Width > 1000) {
+        slide_count = 3
+    } else if (Width < 1000 && Width > 600) {
+        slide_count = 2
+    } else if (Width < 600) {
+        slide_count = 1
+    }
+    let swiper = new Swiper(".mySwiper", {
+        slidesPerView: slide_count,
+        spaceBetween: 30,
+        freeMode: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+</script>
+
+</html>
