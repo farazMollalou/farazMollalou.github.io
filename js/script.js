@@ -53,7 +53,7 @@ btn.forEach(item => {
 
 // auto typing 
 
-const text = ["برنامه نویس     ", "طراح سایت     ", "متخصص UI UX     "];
+const text = ["برنامه نویس فرانت اند    ", "طراح سایت     ", "مدرس     "];
 
 let end = 1, counter = 0, show = "", word = "";
 
@@ -72,6 +72,6 @@ function autoType() {
     }
 }
 
-setInterval(autoType, 180);
+setInterval(autoType, 120);
 
 // customers slider 

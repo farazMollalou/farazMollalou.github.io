@@ -21,24 +21,23 @@
     flex-direction: $dir;
 }
 @mixin title {
-    width: 70%;
+    width: 60%;
     text-align: center;
     color: red;
     background-color: gold;
-    padding: 10px 0;
-    font-size: 40px;
-    border-radius: size(12);
+    padding: 5px 0;
+    font-size: 30px;
+    border-radius: size(6);
 }
 @mixin title2 {
-    padding: 5px 0;
-    font-size: 35px;
+    font-size: 25px;
     width: 90%;
 }
 @mixin btn($bg) {
     width: 180px;
     cursor: pointer;
     border-radius: 10px;
-    font-size: 30px;
+    font-size: 24px;
     transition: 0.5s;
     font-weight: bold;
     text-align: center;
@@ -66,7 +65,7 @@ html[theme='dark-mode']{
 // scroll bar style 
 
 ::-webkit-scrollbar {
-    width: 22px;
+    width: 14px;
     &-track {
         background: gold;
     }
@@ -105,16 +104,16 @@ main{
 }
 // header section 
 .header{
-    @include wh(100%, 100px);
+    @include wh(100%, 70px);
     background-color: rgb(0, 0, 110);
     position: fixed;
     z-index: 999;
 
     #menu-btn{
         display: none;
-        font-size: 35px;
+        font-size: 29px;
         position: absolute;
-        top: 30px;
+        top: 22px;
         right: 30px;
         cursor: pointer;
         z-index: 1000;
@@ -125,11 +124,11 @@ main{
         left: 40px;
         top: 5px;
         img{
-            width: 200px;
+            width: 150px;
         }
     }
     #nav{
-        @include wh(60%, 100px);
+        @include wh(60%, 70px);
         @include flex-center();
         justify-content: space-evenly;
         position: fixed;
@@ -181,18 +180,25 @@ main{
 .landing{
     @include flex-center();
     background-size: cover;
-    @include wh(100%, 110vh);
+    background-attachment: fixed;
+    @include wh(100%, 100vh);
     background-image: url('../img/bg2.png');
 
     .box{
         @include flex-center(column);
-        font-size: 40px;
+        font-size: 30px;
         width: 50%;
         padding: 30px 0;
         gap: 15px;
         color: rgb(238, 255, 0);
         border-radius: 10px;
         text-align: center;
+    }
+    img {
+        width: 280px;
+        height: 280px;
+        border-radius: 50%;
+        border: 2px solid gold;
     }
 }
 .about{
@@ -208,8 +214,9 @@ main{
         }
         .text{
             width: 60%;
-            font-size: size(5);
+            font-size: 20px;
             text-align: center;
+            line-height: 45px;
         }
         a{
             @include btn($purple);
@@ -274,7 +281,8 @@ main{
                     text-align: center;
                     padding: 5px 0;
                     color: yellow;
-                    background: linear-gradient(to right, antiquewhite, rgb(82, 0, 154), antiquewhite);
+                    background-color: #00039a;
+                    // background: linear-gradient(to right, antiquewhite, #00039a, antiquewhite);
                     border-radius: 10px;
                 }
                 h4{
@@ -283,7 +291,7 @@ main{
                 h5 {
                     @extend h3;
                     font-weight: 800;
-                    font-size: 22px;
+                    font-size: 20px;
                 }
                 p {
                     width: 80%;
@@ -324,7 +332,7 @@ main{
 }
 .skills{
     width: 100%;
-    padding: 150px 0 250px 0;
+    padding: 50px 0 150px 0;
     @include flex-center();
     flex-direction: column;
     gap: 100px;
@@ -522,7 +530,7 @@ svg{
             left: 25px;
             top: 10px;
             img{
-                width: 180px;
+                width: 130px;
             }
         }
         #nav{
@@ -539,9 +547,10 @@ svg{
         }
     }
     .landing{
+        flex-wrap: wrap;
         .box{
-            width: 80%;
-            font-size: 30px;
+            width: 300px;
+            font-size: 24px;
         }
     }
     .about{
@@ -565,7 +574,7 @@ svg{
                 }
             }
             .img {
-                width: 80%;
+                width: 60%;
             }
         }
     }
@@ -594,15 +603,60 @@ svg{
     .header{
         #nav{
             width: 90vw;
+            
+            a {
+                font-size: 18px;
+            }
+        }
+        #logo {
+            left: 15px;
+        }
+    }
+    .landing {
+        flex-direction: column;
+        padding-top: 60px;
+        .box {
+            order: 5;
+        }
+        img {
+            width: 150px;
+            height: 150px;
         }
     }
     .about{
         article{
+            gap: 40px;
             .title{
                 @include title2();
             }
             .text{
                 width: 90%;
+                font-size: 14px;
+                line-height: 35px;
+            }
+        }
+    }
+    .portfolio {
+        gap: 40px;
+
+        .container {
+            gap: 40px;
+
+            .img {
+                width: 350px;
+            }
+            #project_detail {
+                .text {
+                    .project_link_btn {
+                        font-size: 1rem;
+                        padding: 3px 8px;
+                        width: 180px;
+                        
+                        &:hover {
+                            width: 180px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -644,8 +698,18 @@ svg{
                 }
             }
             .img {
-                width: 90%;
+                width: 70%;
             }
+        }
+    }
+    .footer {
+        .items {
+            i {
+                font-size: 40px;
+            }
+        }
+        .cr {
+            font-size: 10px;
         }
     }
 }
